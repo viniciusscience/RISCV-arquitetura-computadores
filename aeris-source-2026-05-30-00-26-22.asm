@@ -1,6 +1,6 @@
 .data
 VETOR_A: .word 3,5,9,11,13,15,17,19
-VETOR_B: .word 3,5,9,11,14,17,19,30
+VETOR_B: .word 3,5,9,96,14,23,12,30
 
 .text
 main:
@@ -19,12 +19,10 @@ Loop:
     add  t4, t6, a1 
     lw a5 0(t3)
     lw a6 0(t4)
+     addi s1, s1, 1
     beq a5, a6 SOMA
-    j PROXIMO  
-
-PROXIMO:
-    addi s1, s1, 1
     j Loop  
+
 
 SOMA:
     addi s6,s6,1

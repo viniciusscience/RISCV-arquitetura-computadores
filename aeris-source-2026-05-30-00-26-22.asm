@@ -14,7 +14,7 @@ Loop:
     slti t0, s0, 8     
     beq  t0, zero, Exit 
     addi s0, s0, 1
-    slli a1,s1,2
+    slli a1 ,s1, 2
     add  t3, t5, a1
     add  t4, t6, a1 
     lw a5 0(t3)
@@ -25,7 +25,7 @@ Loop:
 
 
 SOMA:
-    addi s6,s6,1
+    addi s6, s6, 1
     j    Loop  
 Exit:
     nop                  

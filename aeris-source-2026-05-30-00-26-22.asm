@@ -1,6 +1,6 @@
 .data
-VETOR_A: .word 3,5,9,11,13,15,17,19
-VETOR_B: .word 3,5,9,96,14,23,12,30
+VETOR_A: .word 3, 5, 9, 11, 13, 15, 17, 19
+VETOR_B: .word 3, 5, 9, 96, 14, 23, 12, 30
 
 .text
 main:

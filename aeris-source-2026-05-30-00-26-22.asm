@@ -6,8 +6,8 @@ VETOR_B: .word 3,5,9,96,14,23,12,30
 main:
     la t5 VETOR_A
     la t6 VETOR_B
-    li s1,0
-    li s6,0
+    li s1, 0
+    li s6, 0
     addi s0, zero, 0 
 
 Loop:
@@ -19,7 +19,7 @@ Loop:
     add  t4, t6, a1 
     lw a5 0(t3)
     lw a6 0(t4)
-     addi s1, s1, 1
+    addi s1, s1, 1
     beq a5, a6 SOMA
     j Loop  
 
